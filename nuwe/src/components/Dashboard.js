@@ -1,5 +1,9 @@
 import react from 'react';
 import { useState } from 'react';
+import { data } from '../assets/data';
+
+
+
 export const Dashboard = () => {
     const [user, setUser] = useState('Hackaton');
     const [requestedMoney, setRequestedMoney] = useState(0);
