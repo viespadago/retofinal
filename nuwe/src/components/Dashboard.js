@@ -22,11 +22,11 @@ export const Dashboard = () => {
             <div>{data}</div>
             {/* */}
             <div className="info-container">
-                <InfoDetails text="Users" number="200" />
-                <InfoDetails text="Money" number="300" />
-                <InfoDetails text="Requests" number="100" />
-                <InfoDetails text="Time / hour" number="06:00:00" />
-                <InfoDetails text="Budget (€)" number="20000" />
+                <InfoDetails text="Users" number="109" />
+                <InfoDetails text="Requested money" number="336507" />
+                <InfoDetails text="Accepted requests" number="66" />
+                <InfoDetails text="Loan time (day&hour)" number="37:19" />
+                <InfoDetails text="Predicted budget" number="20000" />
                 {/* <Chart /> */}
                 {/* <div>{user}</div>
                 <div>{requestedMoney}</div>
