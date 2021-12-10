@@ -1,0 +1,8 @@
+com\main\nuewcash\controllers\ChartController.class
+com\main\nuewcash\entities\DataTotal.class
+com\main\nuewcash\entities\DataMes.class
+com\main\nuewcash\NuewcashApplication.class
+com\main\nuewcash\entities\Data.class
+com\main\nuewcash\repositories\DataRepository.class
+com\main\nuewcash\controllers\DataController.class
+com\main\nuewcash\entities\User.class

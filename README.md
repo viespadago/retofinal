@@ -1,2 +1,0 @@
-# retofinal
-RETO FINAL | JUMP2DIGITAL
