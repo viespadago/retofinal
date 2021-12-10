@@ -21,6 +21,7 @@ label {
 select {
   width: 100%;
   height: 40px;
+  margin: 10px 0;
   padding: 6px;
   text-transform: capitalize;
   font-size: 14px;
@@ -74,7 +75,7 @@ button:hover {
   box-sizing: border-box;
 }
 
-.info-details:first-child, .info-details:nth-child(2) {
+.info-details:first-child,  .info-details:nth-child(2) {
   width: 49%;
 }
 

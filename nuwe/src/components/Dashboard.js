@@ -19,7 +19,7 @@ export const Dashboard = () => {
                 <InfoDetails text="Money" number="300" />
                 <InfoDetails text="Requests" number="100" />
                 <InfoDetails text="Time / hour" number="06:00:00" />
-                <InfoDetails text="Budget (€)" number="200000" />
+                <InfoDetails text="Budget (€)" number="20000" />
                 {/* <div>{user}</div>
                 <div>{requestedMoney}</div>
                 <div>{acceptedRequests}</div>
