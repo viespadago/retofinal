@@ -16,11 +16,14 @@ public class RequestedMoney {
     private String mes;
     
     private Double cantidad;
+    
+    private Integer users;
 
-    public RequestedMoney(String ano, String mes, double cantidad) {
+    public RequestedMoney(String ano, String mes, Double cantidad, Integer users) {
         this.ano = ano;
         this.mes = mes;
         this.cantidad = cantidad;
+        this.users = users;
     }
 
     public String getAno() {
@@ -45,6 +48,14 @@ public class RequestedMoney {
 
     public void setCantidad(Double cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public Integer getUsers() {
+        return users;
+    }
+
+    public void setUsers(Integer users) {
+        this.users = users;
     }
     
 }

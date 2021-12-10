@@ -28,15 +28,16 @@ public class ChartController {
     
     
     
-    @GetMapping("/requestedmoney")
-    List<RequestedMoney> requestedMoney() {
+    @GetMapping("/total-money-users")
+    List<RequestedMoney> requestedMoneyUsers() {
         List<RequestedMoney> listRequestMoney = new ArrayList<>();
         List<Data> datos =  dataRepository.findAll();
         for(Data dato : datos){
             String ano = dato.getMonth().substring(3);
             String mes = dato.getMonth().substring(0,2);
             Double cantidad = dato.getTotalRequestedMoney();
-            listRequestMoney.add(new RequestedMoney(ano,mes,cantidad));
+            Integer user = dato.getTotalUsers();
+            listRequestMoney.add(new RequestedMoney(ano,mes,cantidad,user));
         }
         return listRequestMoney;
     }
