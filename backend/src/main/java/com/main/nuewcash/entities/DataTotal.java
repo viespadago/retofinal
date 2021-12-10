@@ -9,7 +9,7 @@ package com.main.nuewcash.entities;
  *
  * @author frank
  */
-public class RequestedMoney {
+public class DataTotal {
     
     private String ano;
     
@@ -19,7 +19,7 @@ public class RequestedMoney {
     
     private Integer users;
 
-    public RequestedMoney(String ano, String mes, Double cantidad, Integer users) {
+    public DataTotal(String ano, String mes, Double cantidad, Integer users) {
         this.ano = ano;
         this.mes = mes;
         this.cantidad = cantidad;

@@ -17,10 +17,11 @@ import javax.persistence.Id;
 @Entity
 public class Data {
     
-    @Id
+    
     @Column(name="name")
     private String name;
     
+    @Id
     @Column(name="nameuuid")
     private String month;
     
