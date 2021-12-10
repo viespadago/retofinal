@@ -1,6 +1,6 @@
 export const InfoDetails = ({ text, number }) => (
-  <div>
-    <p>{ text }</p>
-    <p>{ number }</p>
+  <div className="info-details">
+    <p className="info-text">{ text }</p>
+    <p className="info-number">{ number }</p>
   </div>
 );

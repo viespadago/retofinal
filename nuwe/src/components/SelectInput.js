@@ -1,12 +1,9 @@
-import { months } from '../assets/months';
-
-export const SelectInput = ({ month, setMonth }) => {
+export const SelectInput = ({ value, setMethod, text, data }) => {
   return (
     <>
-      <label htmlFor="month">Month</label>
-      <select name="month" id="month" value={ month } onChange={ (e) => setMonth(e.target.value) }>
-        <option value={ null }>Select a month</option>
-        { months !== '' && months.map( (monthItem, id) => <option key={ id } value={ monthItem.name }>{ monthItem.name }</option>) }
+      <select name={text} id={text} value={ value } onChange={ (e) => setMethod(e.target.value) }>
+        <option value={ null }>Select a { text }</option>
+        { data !== '' && data.map( (dataItem, id) => <option key={ id } value={ dataItem.name }>{ dataItem.name }</option>) }
       </select>
     </>
   );
