@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SelectInput } from './SelectInput';
 import SubmitBtn from './SubmitBtn';
+
 export const Formulary = () => {
   const [month, setMonth] = useState('');
 

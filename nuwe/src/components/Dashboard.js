@@ -1,6 +1,6 @@
-import react from 'react';
 import { useState } from 'react';
 import { data } from '../assets/data';
+import { InfoDetails } from './InfoDetails';
 
 
 
@@ -15,6 +15,8 @@ export const Dashboard = () => {
 
             {/* */}
             <div>
+                <InfoDetails text="Users" number="200" />
+                <InfoDetails text="Money" number="300" />
                 <div>{user}</div>
                 <div>{requestedMoney}</div>
                 <div>{acceptedRequests}</div>
