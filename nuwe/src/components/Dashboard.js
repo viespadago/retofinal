@@ -14,14 +14,17 @@ export const Dashboard = () => {
         <>
 
             {/* */}
-            <div>
+            <div className="info-container">
                 <InfoDetails text="Users" number="200" />
                 <InfoDetails text="Money" number="300" />
-                <div>{user}</div>
+                <InfoDetails text="Requests" number="100" />
+                <InfoDetails text="Time / hour" number="06:00:00" />
+                <InfoDetails text="Budget (€)" number="200000" />
+                {/* <div>{user}</div>
                 <div>{requestedMoney}</div>
                 <div>{acceptedRequests}</div>
                 <div>{budget}</div>
-                <div>{loanReturnTime}</div>
+                <div>{loanReturnTime}</div> */}
             </div>
         </>
     )
