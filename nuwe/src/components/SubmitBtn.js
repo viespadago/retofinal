@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const SubmitBtn = () => {
+export const SubmitBtn = ({ method }) => {
 
-    //fecth al back y nos devuelve 
+    //fecth al back y nos devuelve
     return (
         <>
-            <button>UPDATE DATA</button>
+            <button onClick={ method }>UPDATE DATA</button>
         </>
     )
 }
