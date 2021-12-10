@@ -1,4 +1,4 @@
-export const data = [
+[
     {
         "month": "11-2012",
         "requestedMoney": 1344

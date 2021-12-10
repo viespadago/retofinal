@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { data } from '../assets/data';
 import { InfoDetails } from './InfoDetails';
 
-
+import callToApi from '../services/api.js';
 
 export const Dashboard = () => {
     const [user, setUser] = useState('Hackaton');
@@ -10,9 +10,15 @@ export const Dashboard = () => {
     const [acceptedRequests, setAcceptedRequests] = useState(0);
     const [budget, setBudget] = useState(0);
     const [loanReturnTime, setLoanReturnTime] = useState(0)
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        callToApi().then((data) => setData(data));
+    }, []);
+    console.log(data)
     return (
         <>
-
+            <div>{data}</div>
             {/* */}
             <div className="info-container">
                 <InfoDetails text="Users" number="200" />
@@ -20,6 +26,8 @@ export const Dashboard = () => {
                 <InfoDetails text="Requests" number="100" />
                 <InfoDetails text="Time / hour" number="06:00:00" />
                 <InfoDetails text="Budget (€)" number="20000" />
+
+
                 {/* <div>{user}</div>
                 <div>{requestedMoney}</div>
                 <div>{acceptedRequests}</div>
