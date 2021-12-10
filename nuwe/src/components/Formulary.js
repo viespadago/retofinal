@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SelectInput } from './SelectInput';
-
+import SubmitBtn from './SubmitBtn';
+import Dashboard from './Dashboard';
 export const Formulary = () => {
   const [month, setMonth] = useState('');
 
@@ -17,9 +18,10 @@ export const Formulary = () => {
   };
 
   return (
-    <form noValidate onSubmit={ handleSubmit }>
-      <SelectInput setMonth={ setMonth } />
-
+    <form noValidate onSubmit={handleSubmit}>
+      <SelectInput setMonth={setMonth} />
+      <SubmitBtn />
+      <Dashboard />
       {/* <ContainedButton
         text={ buttonText }
         method={ handleSubmit }
