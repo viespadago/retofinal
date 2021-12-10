@@ -1,18 +1,10 @@
 const callToApi = () => {
-    return fetch('../../data/data.json')
+    return fetch('http://localhost:3000/total-money-users')
         .then(response => response.json())
         .then(response => {
-            return response.results
-                .map(item => {
-                    const result = {
-
-                        month: item.month,
-                        requestedMoney: item.requestedMoney
-
-                    }
-                    return result;
-                })
-        });
+             console.log(response)
+                }
+        );
 
 };
 
