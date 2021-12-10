@@ -1,28 +1,24 @@
-const callToApi = (page) => {
-    return fetch('https://rickandmortyapi.com/api/character?page=' + page)
-        .then(response => response.json())
-        .then(response => {
-            return response.results
-                .map(char => {
-                    const result = {
-                        name: char.name,
-                        species: char.species,
-                        image: char.image,
-                        id: char.id,
-                        status: char.status,
-                        episode: char.episode,
-                        origin: char.origin.name,
+// const callToApi = () => {
+//     return fetch('/data.json')
+//         .then(response => response.json())
+//         .then(response => {
+//             return response.results
+//                 .map(item => {
+//                     const result = {
+//                         char: item.name,
+//                         month: item.month,
+//                         requestedMoney: item.requestedMoney
+
+//                     }
+//                     return result;
+//                 })
+//         });
+
+// };
 
 
-                    }
-                    return result;
-                })
-        });
-
-};
-
-const objectToExport = {
-    callToApi: callToApi,
-};
-
-export default objectToExport;
+// export default callToApi;
+import { data } from "./data"
+export const calltoApi = () => {
+    return data
+}
