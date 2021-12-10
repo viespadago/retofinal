@@ -1,5 +1,12 @@
 .App {
-  padding: 20px;
+  padding: 70px 20px;
+
+}
+@media screen and (min-width: 768px) {
+  .App {
+    width: 40%;
+    margin: auto;
+  }
 }
 
 label {
