@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { data } from '../assets/data';
+// import { Chart } from './Chart';
 import { InfoDetails } from './InfoDetails';
 
 
@@ -20,6 +21,7 @@ export const Dashboard = () => {
                 <InfoDetails text="Requests" number="100" />
                 <InfoDetails text="Time / hour" number="06:00:00" />
                 <InfoDetails text="Budget (€)" number="20000" />
+                {/* <Chart /> */}
                 {/* <div>{user}</div>
                 <div>{requestedMoney}</div>
                 <div>{acceptedRequests}</div>

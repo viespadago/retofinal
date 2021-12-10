@@ -68,6 +68,7 @@ button:hover {
 }
 
 .info-details {
+  width: 100%;
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
@@ -75,17 +76,20 @@ button:hover {
   box-sizing: border-box;
 }
 
-.info-details:first-child,  .info-details:nth-child(2) {
-  width: 49%;
+@media screen and (min-width: 768px) {
+  .info-details:first-child,  .info-details:nth-child(2) {
+    width: 49%;
+  }
+
+  .info-details:nth-child(3),  .info-details:last-child {
+    width: 30%;
+  }
+
+  .info-details:nth-child(4) {
+    width: 37%;
+  }
 }
 
-.info-details:nth-child(3),  .info-details:last-child {
-  width: 30%;
-}
-
-.info-details:nth-child(4) {
-  width: 37%;
-}
 
 .info-text {
   font-size: 24px;

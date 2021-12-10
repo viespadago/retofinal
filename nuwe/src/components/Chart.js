@@ -29,7 +29,7 @@
 // export default Chart;
 
 //import './App.css';
-import '../../node_modules/react-vis/dist/style.css';
+// import '../../node_modules/react-vis/dist/style.css';
 import { XYPlot, LineSeries, VerticalBarSeries, MarkSeries } from 'react-vis';
 import React from 'react'
 
